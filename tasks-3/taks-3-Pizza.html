@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background-image: url(pizza.jpg); width:600px ; height:100% ; margin:0 auto; max-width:700px ;">
+    <form method="post" action="http:blackgoosebistro.com/pizza.php">
+        <div style="background-color: white;">
+            <h2 align="center">Sepotong Pizza | Pizza for Customer</h2>
+            <fieldset>
+            <p>Our 12" wood-fired Buger are available for delivery. 
+                Build your custom Burger and we'll deliver it within an hour.</p>
+            </fieldset>
+        <fieldset>
+            <legend align="center">Order Pizza</legend>
+        <label for="Name">Namee :</label><br/>
+        <input type="text" name="customername" id="form-name" size="30"><br/>
+        <label for="Address">Address :</label><br/>
+        <textarea name="Address" rows="4" cols="40" maxlength="400" id="form-add"></textarea><br/>
+        <label for="Phone Number">Phone Number :</label><br/>
+        <input type="tel" name="telephone" id="form-tel" size="30"/><br/>
+        <label for="Email">Email :</label><br/>
+        <input type="email" name="email" id="fom-email" size="30"><br/>
+        <labe for="Delivery">Delivery Instuction :</labe><br/>
+        <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea>
+        </fieldset>
+        
+            <h2 align="center"> Sesuaikan Pizza Anda</h2>
+            <fieldset>
+                <legend align="center">Pizza Space</legend>
+                <p>Crust (Choose One):</p>
+                    <input type="radio" name="crust" value="Classic white">
+                    <labe for="crust">Classic white</labe><br/>
+                    <input type="radio" name="crust" value="multigrain"> 
+                    <label for="crust">Thin Crust</label><br/>
+                    <input type="radio" name="crust" value="cheese crust">
+                    <label for="crust">Cheese-Stuffed Crust</label><br/>
+                    <input type="radio" name="crust" value="gluten free">
+                    <label for="crust">Spicy Crust</label><br>
+            <p>Pizza Toping (Choose as many as you want):</p>
+            <form method="post" action="http:blackgoosebistro.com/pizza.php">
+                    <input type="checkbox" name="toppings[]" value="Blackpeppers"> 
+                    <label for="toppings">Blackpeppers</label><br/>
+                    <input type="checkbox" name="toppings[]" value="Suprme Cheese">
+                    <label for="toppings">Suprme Cheese</label><br/>
+                    <input type="checkbox" name="toppings[]" value="mozzarella">
+                    <label for="toppings">Mozzarella</label><br/>
+                    <input type="checkbox" name="toppings[]" value="Meet Balls"> 
+                    <label for="toppings">Meet Balls</label><br/>
+                    <input type="checkbox" name="toppings[]" value="Chiken Lovers"> 
+                    <label for="toppings">Chiken Lovers</label><br/>
+                    <input type="checkbox" name="toppings[]" value="peppers">
+                    <label for="toppings">Peppers</label><br/>
+                    <input type="checkbox" name="toppings[]" value="anchovies"> 
+                    <label for="toppings">Anchovies</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Number</legend>
+                <p>How many pizza: 
+                <select name="pizza" size="1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                </select>                
+            </p>
+            <input type="submit" style="background-color: aqua;" value="Bring me a Pizza">
+            <input type="submit" style="background-color: aqua" value="Reset">
+        </fieldset>
+        </div>
+    
+</body>
+</html>
