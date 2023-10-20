@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(wave.jpg);
+    color: black;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: inset;
+
+}
+
+.profile {
+    background-color:gray;
+    color: white;
+    text-align: center;
+    font-size: 1,8em;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+.profile h2 {
+    text-align: center;
+
+}
+
+.Deskripsi {
+    background-color: white;
+    text-align: center;
+    font-size: 1,8em;
+    margin: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: inset;
+
+}
+
+.kota {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2 {
+    align-content: center;
+}
+
+
+.video {
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+
+
+
+
+    
