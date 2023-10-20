@@ -52,9 +52,12 @@ header {
 
 }
 
-.kota {
-    justify-content: center;
-    align-items: center;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
     
 }
 
