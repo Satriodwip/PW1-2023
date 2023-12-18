@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitungluas dan Keliling Lingkaran</title>
+</head> 
+<body>
+  <fieldset>
+    <legend align="center">Lingkaran</legend>
+    <h1 style="text-align: center;">Menghitung Luas & Keliling Lingkaran</h1>
+    <h2 style="text-align: center;"> Rumus Luas dan Keliling Linkaran </h2>
+    <h3>Luas lingkaran : 3,14 * Jari_Jari * Jari-Jari</h3>
+    <h3>Keliling Lingkaran : 2 * 3,14 * Jari-Jari</h3>
+    <br>
+  <form class="nilai">
+    <label for="jari2" style="font-size: larger; font-weight: 600;"> Masukan Nilai Jari_Jari : </label>
+    <input type="number" name="jari2" id="jari2" min="3" onchange="Lingkaran()">
+  </form>
+    <h3> Hasil Luas Lingkaran : <span id="luas"></span></h3>
+    <h3> Hasil Keliling Lingkaran : <span id="keliling"></span></h3>
+  </fieldset> 
+<script>
+    function Lingkaran() {
+        let Jari_Jari = parseFloat(document.getElementById("jari2").value) || 0;
+        
+        console.log("jari2 " + luas)
+        console.log("keliling" + keliling)
+        
+        let LuasLingkaran = Math.PI * Jari_Jari * Jari_Jari
+        let KelilingLingkaran = 2 * Math.PI *  Jari_Jari;
+
+        document.getElementById("luas").innerHTML = LuasLingkaran.toFixed(2);
+        document.getElementById("keliling").innerHTML = KelilingLingkaran.toFixed(2);
+    }
+</script>
+</body>
+</body>
+</html>
