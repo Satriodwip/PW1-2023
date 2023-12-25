@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        .validation {
+            font-family: sans-serif;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            justify-content: center;
+            color: #FF1E1E ;
+        }
+
+        form {
+            display: grid ;
+            margin: auto ;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            padding: 50px;
+            background-color: slategrey;
+        }
+        form input[type="text"] {
+            margin: 5px;
+            width: 200px;
+        }
+        form input[type="password"] {
+            width: 200px;
+            margin: 5px ;
+            padding: 5p;
+        }
+        form [id ="login"] {
+            background-color: aqua;
+        }
+        form [id ="cencel"] {
+            background-color: #FF1E1E;
+        }
+        
+        .button {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 5px; 
+            padding: 10px;
+            height: 20px;
+        }
+       
+        
+        
+
+    </style>
+</head>
+<body>
+    <section class="validation"> 
+    <form>
+        <h1>Login</h1>
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        
+        <div class="button">
+            <input type="button" id="login" value="Login" onclick="Login()">
+            <input type="Reset" id="cencel" value="Reset">
+        </div>
+    </form>
+</section>
+
+    <script src="otentikasi.js"></script>
+</body>
+</html>
